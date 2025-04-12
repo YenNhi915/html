@@ -3,7 +3,7 @@
   background-image: linear-gradient(0, #affab7, #17ec22);
 }
 .header {
-  height: 120px;
+  height: var(--header-height);
   background-image: linear-gradient(0, #affab7, #17ec22);
 }
 
@@ -15,7 +15,7 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 4px;
+  margin: 4px 0 0;
 }
 .header__navbar-item {
   margin: 0 8px;
@@ -223,14 +223,150 @@
   text-align: center;
 }
 
-/* .modal__overlay {
-  position: absolute;
+/* Authem modal */
+.auth-form  {
+  width: 500px;
+  background-color: var(--white-color);
+  border-radius: 5px; /*->bo góc khung */
+  overflow: hidden; /*->khi con vượt quá cha sẽ bị ẩn đi, vd khung nhọn của 
+                    fb, gg sẽ bị ẩn đi, bo góc của khung sẽ hiện ra */
+}
+.auth-form__container {
+  padding: 0 32px;
+}
+.auth-form__header {
+  display: flex;
+  align-items: center; /*->để chữ đăng ký vfa đăng nhập ngang hàng */
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-top: 12px;
+}
+.auth-form__heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-color);
+
+}
+.auth-form__switch-btn {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.auth-form__input {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-} */
-/* .modal__body {
-  width: 300px;
-  height: 300px;
-  background-color: #333;
- } */
+  height: 40px;  
+  margin-top: 16px;
+  padding: 0 12px;
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+.auth-form__input:focus {
+  border-color: #777;
+}
+.auth-form__aside {
+  margin-top: 18px;
+}
+.auth-form__policy-text {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center; /*-> căn dòng chữ ở giữa */
+  padding: 0 12px;
+}
+.auth-form__text-link {
+  color: var(--primary-color);
+  text-decoration: none; /*->bỏ gạch chân chữ */ 
+}
+
+.auth-form__controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+}
+.auth-form__controls-back {
+  margin-right: 8px;
+  
+}
+.auth-form__socials {
+  background-color: #f5f5f5;
+  padding: 16px 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+}
+.auth-form__socials-icon {
+  font-size: 1.8rem;
+
+}
+.auth-form__socials--facebook {
+  color: var(--white-color);
+  background-color: #3a5a98;
+
+}
+.auth-form__socials--facebook
+.auth-form__socials-icon {
+  color: var(--white-color);
+}
+.auth-form__socials-title {
+  margin: 0 24px;
+}
+.auth-form__socials--google {
+  width: 200px;
+  color: #666;
+  background-color: var(--white-color);
+}
+.auth-form__help {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.auth-form__help-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #939393;
+}
+.auth-form__help-separate {
+  display: block;
+  height: 22px;
+  margin: 1px 16px 0;
+  border-left: 1px solid #eaeaea;
+}
+
+.auth-form__help-forgot {
+  color: var(--primary-color);
+}
+/* Header with search */
+.header-with-search {
+  height: var(--header-with-search-height);
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__logo-img {
+  width: 150px;
+}
+
+.header__search {
+  flex: 1;
+  height: 40px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+}
+.header__cart {
+  width: 150px;
+  text-align: center;
+
+}
+.header__cart-icon {
+  font-size: 2.4rem;
+  color: var(--white-color);
+  margin-top: 6px;
+}
+
