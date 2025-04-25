@@ -3,7 +3,7 @@
   /* --primary-color-rgba: rgb(238, 75, 43); */
   --white-color: #fff;
   --black-color: #000;
-  --text-color: #333;
+  --text-color: #5d5a5a;
   --border-color: #dbdbdb;
   --header-height: 120px;
   --navbar-height: 34px;
@@ -19,7 +19,7 @@ html {
 }
 
 .grid {
-  width: 1200px;
+  width: 1200px; 
   max-width: 100%;
   margin: 0 auto;
 }
@@ -86,7 +86,7 @@ html {
 
 /* Button style */
 .btn {
-  min-width: 142px;
+  min-width: 124px;
   height: 34px;
   text-decoration: none;
   border: none;
