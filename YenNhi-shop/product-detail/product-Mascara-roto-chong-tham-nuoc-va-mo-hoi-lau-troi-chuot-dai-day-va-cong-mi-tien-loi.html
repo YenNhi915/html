@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/font/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li
+                class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
+              >
+                Vào cửa hàng Trên ứng dụng YN-Shop
+                <!-- Header QR code -->
+                <div class="header__qr">
+                  <img
+                    src="../assets/img/qrcode.png"
+                    alt="QR code"
+                    class="header__qr-img"
+                  />
+                  <div class="header__qr-apps">
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="../assets/img/ggplay.png"
+                        alt="Google Play"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="../assets/img/appstore.png"
+                        alt="App Store"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">Kết nối</span>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--has-notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fa-solid fa-bell"></i>
+                  Thông báo
+                </a>
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông Báo Mới Nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="../assets/img/Ohui.webp"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >HiddenTag là giải pháp xác thực hàng chính hãng bằng
+                            công nghệ tiên tiến nhất hiện nay</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="../assets/img/ckđ.webp"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Sale Sốc bộ dưỡng Ohui The First Tái tạo trẻ hóa da
+                            SALE OFF 70%</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >Giá chỉ còn 375.000 (giá gốc: 1.250.000 vnd)</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="../assets/img/velvet.webp"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Black Rouge chính thức ra mắt dòng son lì mới Double
+                            Layer Over Velvet</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >Một làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                            luôn là điều mà các quý cô ao ước</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                  </footer>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="fa-solid fa-circle-question"></i>
+                  Trợ giúp
+                </a>
+              </li>
+              <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+              <li class="header__navbar-item header__navbar-user">
+                <img
+                  src="https://cdn2.fptshop.com.vn/small/avatar_trang_1_cd729c335b.jpg"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <span class="header__navbar-user-name">Yến Nhi</span>
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="">Tài khoản của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Địa chỉ của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Đơn mua của tôi</a>
+                  </li>
+                  <li
+                    class="header__navbar-user-item header__navbar-user-item--separate"
+                  >
+                    <span  class="logout">Đăng xuất</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- Header-with-search  -->
+          <div class="header-with-search">
+            <div class="header__logo">
+              <a href="../index.html" class="header__logo-link">
+                <img
+                  src="../assets/img/YenNhi-Shop.jpg"
+                  class="header__logo-shop-img"
+                  alt=""
+                />
+              </a>
+  
+              <div class="header__search">
+                <div class="header__search-input-wrap">
+                  <input
+                    type="text"
+                    class="header__search-input"
+                    placeholder="Tìm kiếm sản phẩm"
+                  />
+                  <!-- Seảch history -->
+                  <div class="header__search-history">
+                    <h3 class="header__search-history-heading">
+                      Lịch sử tìm kiếm
+                    </h3>
+                    <ul class="header__search-history-list">
+                      <li class="header__search-history-item">
+                        <a href="">Kem dưỡng da</a>
+                      </li>
+                      <li class="header__search-history-item">
+                        <a href="">Kem trị mụn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="header__search-select">
+                  <span class="header__search-select-lable">Trong shop</span>
+                  <i
+                    class="header__search-select-icon fa-solid fa-chevron-down"
+                  ></i>
+                  <ul class="header__search-option">
+                    <li
+                      class="header__search-option-item header__search-option-item--active"
+                    >
+                      <span>Trong shop</span>
+                      <i class="fa-solid fa-check"></i>
+                    </li>
+                    <li class="header__search-option-item">
+                      <span>Ngoài shop</span>
+                      <i class="fa-solid fa-check"></i>
+                    </li>
+                  </ul>
+                </div>
+                <button class="header__search-btn">
+                  <i
+                    class="header__search-btn-icon fa-solid fa-magnifying-glass"
+                  ></i>
+                </button>
+              </div>
+              <!-- Cart laayout -->
+              <div class="header__cart">
+                <div class="header__cart-wrap">
+                  <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                  <span class="header__cart-notice">3</span>
+                  <!-- Khi cần no-cart thì thêm class: header__cart-list--no-cart -->
+                  <div class="header__cart-list">
+                    <img
+                      src="./assets/img/no__cart.png"
+                      alt=""
+                      class="header__cart-no-cart-img"
+                    />
+                    <span class="header__cart-list-no-cart-msg"
+                      >Chưa có sản phẩm</span
+                    >
+  
+                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                    <ul class="header__cart-list-item">
+                      <!-- Cart-item -->
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/trị_vùng_mắt.jpg"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kem đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">2</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Bạc</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Laroche-Posay.jpg"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Combo Sữa rửa mặt, tẩy tế bào chết Laroche-Posay
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >474.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">1</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Skincare</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Serum_Nghệ_Cocoon.jpg"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Serum Nghệ Cocoon
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >125.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">3</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Serum</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Laptop_ASUS_ROG_Strix.jpg"
+                          alt=""
+                          class="header__cart-img"
+                        />
+  
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Laptop ASUS ROG Strix
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >27.500.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">1</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Điện tử</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Mặt_nạ_giấy_BNBG.webp"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Mặt nạ giấy BNBG, cấp ẩm cho vùng da mặt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >147.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">5</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: BNBG</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Iphone_14_pro_max.png"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Điện thoại iphone 14 pro max
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >5.800.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">3</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Bạc</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Son_Kem_Lì_Colorkey.webp"
+                          alt=""
+                          class="header__cart-img"
+                        />
+  
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Son Kem Lì Siêu Mịn Môi Colorkey Soft Matte Water
+                              Tint 1.8g
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >128.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">3</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Son môi</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Bảng_Phấn_Mắt_Clio.webp"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bảng Phấn Mắt 12 Ô Clio Pro Eye Palette Air 7.2g
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >352.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">1</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Bảng mắt</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Má _Hồng _Judydoll.jpg"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Má Hồng Judy doll 4 ô
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >212.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">4</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Má hồng</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="../assets/img/Mascara-Maybelline.webp"
+                          alt=""
+                          class="header__cart-img"
+                        />
+  
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Mascara Maybelline Sensational Sky High Lengthening
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >220.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-qnt">3</span>
+                            </div>
+                          </div>
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description"
+                              >Phân loại: Mascara</span
+                            >
+                            <span class="header__cart-item-remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="#" class="header__cart-view-cart btn btn--primary"
+                      >Xem giỏ hàng</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="home-product">
+        <div class="home-product-item">
+          <img
+            src="../assets/img/mcr roto.webp"
+            alt=""
+            class="home-product-item-img"
+          />
+        </div>
+        <div class="home-product-item-info">
+          <h3 class="home-product-item-intro">
+            Mascara roto chống thấm nước và mồ hôi lâu trôi chuốt dài dày và cong
+            mi tiện lợi, siêu hot 3,5g
+          </h3>
+          <div class="home-product__action">
+            <div class="home-product-item__rate">
+              <div class="home-product-item-star">
+                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+              </div>
+            </div>
+            <span class="home-product__sold">15k lượt bán</span>
+  
+            <span class="home-product-item__like home-product-item__like--liked">
+              <i
+                class="home-product-item__like-icon-empty fa-regular fa-heart"
+              ></i>
+              <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+            </span>
+          </div>
+          <div class="home-product-item-price">
+            <span class="home-product-price">493.000 VNĐ</span>
+          </div>
+  
+          <div class="home-product-item-quanlity">
+            <div class="home-product-item-quanlity__para">
+              <span class="home-product-quanlity">Số lượng</span>
+            </div>
+            <div class="home-product-number">
+              <button
+                class="home-product-number--circle-grey home-product-number__plus"
+              >
+                -
+              </button>
+              <span class="home-product-quanlity-number">1</span>
+              <button
+                class="home-product-number--circle-grey home-product-number__equal"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="home-product-item-type">
+            <div class="home-product-item-type-info">Loại hàng</div>
+            <div class="home-product-item-type__color">
+              <button class="home-product-item-type--brown">02 Nâu</button>
+              <button class="home-product-item-type--black">01 Đen</button>
+            </div>
+          </div>
+          <div class="home-product-cart">
+            <div class="home-product-cart__add">
+              <i class="home-product-cart__icon fa-solid fa-cart-shopping"></i>
+              <span class="home-product-cart__add--added">Thêm vào giỏ hàng</span>
+            </div>
+  
+            <span class="home-product-cart__buy">Mua ngay</span>
+          </div>
+          <div class="divider"></div>
+          <div class="home-product-contact">
+            <span class="home-product-contact--item">Tư vấn ngay</span>
+            <i class="home-product-icon-phone fa-solid fa-phone-volume"></i>
+            <div class="home-product__numberphone">
+              <div class="home-product__numberphone--1">
+                027369124 Chi nhánh Hồ Chí Minh
+              </div>
+              <div class="home-product__numberphone--2">
+                063621524 Chi nhánh Hà Nội
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="socials">
+          <div class="socials-item">
+            <i class="fa-solid fa-square-phone-flip"></i>
+          </div>
+          <div class="socials-item">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+          <div class="grid">
+            <div class="grid__row grid__footer">
+              <div class="grid__column-2-4">
+                
+  
+                  <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">YENNHI-Shop</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                    </li>
+                  </ul>
+                
+                <div class="footer__column">
+                  
+                  <h3 class="footer__heading">Giới thiệu</h3>
+    
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Giới thiệu</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Tuyển dụng</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">Điều khoản</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid__column-2-4">
+                <h3 class="footer__heading">Danh mục</h3>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="" class="footer-item__link">Trang điểm mặt</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-item__link">Trang điểm môi</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-item__link">Trang điểm mắt</a>
+                  </li>
+                </ul>
+                <div class="footer__column">
+  
+                  <h3 class="footer__heading">Theo dõi chúng tôi</h3>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">
+                        <i class="footer-item__icon fa-brands fa-facebook"></i>
+                        Facebook
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">
+                        <i class="footer-item__icon fa-brands fa-square-instagram"></i>
+                        Instagram
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item__link">
+                        <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                        Linkedin
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid__column-2-4">
+                <h3 class="footer__heading">Vào cửa hhàng trên ứng dụng</h3>
+                <div class="footer__download">
+                  <img
+                    src="../assets/img/qrcode.png"
+                    alt="Download QR"
+                    class="footer__download-qr"
+                  />
+                  <div class="footer__download--apps">
+                    <a href="" class="footer__download-app-link">
+                      <img
+                        src="../assets/img/ggplay.png"
+                        alt="Google play"
+                        class="footer__download-app-img"
+                      />
+                      
+                    </a>
+                    <a href="" class="footer__download-app-link">
+                      <img
+                        src="../assets/img/appstore.png"
+                        alt="App store"
+                        class="footer__download-app-img"
+                      />
+  
+                    </a>
+                  </div>
+                 
+                </div>
+                 <div class="footer__google-map">
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.089375169657!2d106.70927937480761!3d10.956621189203313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d751e024b99d%3A0x20b3f9b4c8fdc732!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaW5oIHThur8gLSBL4bu5IHRodeG6rXQgQsOsbmggRMawxqFuZw!5e0!3m2!1svi!2s!4v1747969696090!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+                  </div>
+              </div>
+            </div>
+          </div>
+           <div class="footer__bottom">
+              <div class="grid">
+                <p class="footer__text">© 2025 - Bản quyền thuộc về công ty YENNHI</p>
+              </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="auth-form dnone">
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h3 class="auth-form__heading">Đăng nhập</h3>
+              <span class="auth-form__switch-btn">Đăng ký</span>
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+              </div>
+              <div class="auth-form__group">
+                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+              </div>
+            </div>
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot ">Quên mật khẩu</a>
+                <span class="auth-form__help-separate"></span>
+
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+            <div class="auth-form__controls">
+              <button class="btn btn--primary btn-login">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+        
+          
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+              <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+              <span class="auth-form__socials-title">Đăng nhập với Facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google btn btn--with-icon">
+              <i class="auth-form__socials-icon fa-brands fa-google"></i>
+              <span class="auth-form__socials-title">Đăng nhập với Google</span>
+            </a>
+          </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
