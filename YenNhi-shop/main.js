@@ -26,21 +26,47 @@ function logoutHandler() {
         localStorage.setItem('isLoggedIn', false)
     })
 }
+function validateEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+}
+
+function validateLoginForm() {
+    const loginForm = document.querySelector('.auth-form')
+
+    const inputEmail = loginForm.querySelectorAll('.auth-form__input')[0].value
+    const inputPassword = loginForm.querySelectorAll('.auth-form__input')[1].value
+    const submitBtn = loginForm.querySelector('.btn-login')
+    
+    if(validateEmail(inputEmail) && inputPassword.length >= 8) {
+        submitBtn.classList.remove('disable')
+    } else {
+        submitBtn.classList.add('disable')
+    }
+}
+function handleEmailChange() {
+    const inputEmail = document.querySelectorAll('.auth-form__input')[0]
+
+    inputEmail.addEventListener('input', (e) => {
+        validateLoginForm()
+    })
+}
+function handlePasswordChange() {
+    const inputPassword = document.querySelectorAll('.auth-form__input')[1]
+
+    inputPassword.addEventListener('input', (e) => {
+        validateLoginForm()
+    })
+}
+
 
 function main() {
     const isLoggedIn = localStorage.getItem('isLoggedIn')
     if (isLoggedIn === 'false'){
-        const app = document.querySelector('.app')
-        const loginForm = document.querySelector('.auth-form')
-
-        app.classList.add('dnone')
-        loginForm.classList.remove('dnone')
+      window.location.href="login.html"
+    
     } else {
-        const app = document.querySelector('.app')
-        const loginForm = document.querySelector('.auth-form')
-
-        app.classList.remove('dnone')
-        loginForm.classList.add('dnone')
+       window.location.href="index.html"
     }
 
 
@@ -104,6 +130,9 @@ function main() {
 
     loginHandler()
     logoutHandler()
+    validateLoginForm()
+    handleEmailChange()
+    handlePasswordChange()
 
 }
 

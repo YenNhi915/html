@@ -310,12 +310,16 @@
 
 /* Authem modal */
 .auth-form  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  box-shadow: 1px 2px 10px #000;
   width: 500px;
+  height: 500px;
   background-color: var(--white-color);
   border-radius: 5px; /*->bo góc khung */
   overflow: hidden; /*->khi con vượt quá cha sẽ bị ẩn đi, vd khung nhọn của 
@@ -1266,7 +1270,6 @@ i.home-product-item__like-icon-fill {
 }
 
 .grid__footer {
-  margin-left: 50px;
   justify-content: space-between;
 }
 .send {

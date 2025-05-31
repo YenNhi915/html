@@ -144,18 +144,23 @@ body {
   padding: 0 8px;
 }
 
-.btn-login {
-  width: 100%;
-}
+
 .btn.btn--primary {
+  
+ 
   color: var(--white-color);
   background-color: var(--primary-color);
 }
-/* .btn.btn--disabled {
-  cursor: default;
-  background-color: #999;  -> để vô hiệu hóa nút đăng kí
-  filter: brightness();
-} */
+.btn.disable {
+  width: 100%;
+  background-color: #ccc;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.btn.btn-login {
+   width: 100%;
+}
+
 
 /* Selection */
 .select-input {
